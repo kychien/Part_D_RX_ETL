@@ -27,7 +27,7 @@ Columns were renamed and fixed for unnecessary spaces on the end of column label
 ### NADAC
 The column names seemed to be formatted appropriately, but some were dropped due to lack of relevance.  
 
-The dataset was very inconsistent with its naming practice; the same drug could be abbreviated in different ways.  For example, hydrochlorothiazide might be spelled out, abbreviated as "hcl" or abbreviated as "hct" or "hctz" for various entries.  Although the chemical abbreviation is recognized as "hct"/"hctz", the common usage in prescriptions is "hcl".  Anothher complication was that many of the names have dosages that are not indicated in the CMS dataset.  The name was split by separating out any numbers, special characters, or keywords (ie. “tablet”) into separate columns.
+The dataset was very inconsistent with its naming practice; the same drug could be abbreviated in different ways.  For example, hydrochlorothiazide might be spelled out, abbreviated as "hcl" or abbreviated as "hct" or "hctz" for various entries.  Although the chemical abbreviation is recognized as "hct"/"hctz", the common usage in prescriptions is "hcl".  Another complication was that many of the names have dosages that are not indicated in the CMS dataset.  The name was split by separating out any numbers, special characters, or keywords (ie. “tablet”) into separate columns.
 
 Many of the rows were repeats of the same drug as there were updated measures throughout the year.  To cut down on entries the date was reformatted to be sort-friendly.  Then duplicates were dropped keeping only the entry with the most recent date.
 
